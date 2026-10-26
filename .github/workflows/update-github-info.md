@@ -9,6 +9,8 @@ permissions:
   pull-requests: read
   copilot-requests: write
 strict: true
+model: gpt-6-luna
+max-ai-credits: 30
 engine:
   id: copilot
   copilot-sdk: true
@@ -24,6 +26,23 @@ network:
     - github.blog
     - awesome-copilot.github.com
 safe-outputs:
+  create-issue: false
+  activation-comments: false
+  report-failure-as-issue: false
+  report-failed-jobs: false
+  report-incomplete:
+    create-issue: false
+  report-missing-tool:
+    create-issue: false
+  report-missing-data:
+    create-issue: false
+  threat-detection:
+    engine:
+      id: copilot
+      model: gpt-6-luna
+    max-ai-credits: 30
+    continue-on-error: false
+    report-as-issue: false
   create-pull-request:
     title-prefix: "[mona] "
     draft: true
