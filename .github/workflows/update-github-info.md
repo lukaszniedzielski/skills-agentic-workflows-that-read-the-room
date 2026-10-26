@@ -22,6 +22,7 @@ network:
   allowed:
     - github.com
     - github.blog
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -40,6 +41,7 @@ using GitHub repository API tools. Use web-fetch for these official sources:
 
 - GitHub Blog: https://github.blog/latest/
 - GitHub Changelog: https://github.blog/changelog/
+- Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
 Select at most three useful developer updates from the last 30 days. Verify each
 claim against its linked official article; preserve publication dates, availability
